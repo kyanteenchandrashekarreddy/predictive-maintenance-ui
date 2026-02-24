@@ -55,7 +55,7 @@
                 vibration: document.getElementById('vib').value,
                 pressure: document.getElementById('pres').value
             };
-            const response = await fetch('https://predictive-maintenance-api-sdyn.onrender.com', {
+            const response = await fetch('https://predictive-maintenance-api-sdyn.onrender.com/predict', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
